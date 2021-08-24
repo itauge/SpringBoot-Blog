@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+spring:
+  thymeleaf:
+    cache: false
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?userUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      # 表結構變化，自動更新實體類
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    static-path-pattern: /static/**
+
+logging:
+  #日志級別
+  level:
+    root: info
+    com.itauge.blog: debug
+  file:
+    path: log/blog.log

@@ -1,0 +1,175 @@
+2021-08-24 16:39:14.830  INFO 18368 --- [main] com.itauge.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_241 on DESKTOP-UA32AG2 with PID 18368 (C:\Users\itaug\IdeaProjects\blog\target\classes started by itaug in C:\Users\itaug\IdeaProjects\blog)
+2021-08-24 16:39:14.838 DEBUG 18368 --- [main] com.itauge.blog.BlogApplication          : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-24 16:39:14.838  INFO 18368 --- [main] com.itauge.blog.BlogApplication          : No active profile set, falling back to default profiles: default
+2021-08-24 16:39:15.903  INFO 18368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-24 16:39:16.040  INFO 18368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 5 JPA repository interfaces.
+2021-08-24 16:39:16.966  INFO 18368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-08-24 16:39:16.980  INFO 18368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-24 16:39:16.981  INFO 18368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-24 16:39:17.146  INFO 18368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-24 16:39:17.147  INFO 18368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2248 ms
+2021-08-24 16:39:17.366  INFO 18368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-24 16:39:17.444  INFO 18368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-24 16:39:17.700  INFO 18368 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-24 16:39:17.830  INFO 18368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-24 16:39:18.516  INFO 18368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-24 16:39:18.545  INFO 18368 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-24 16:39:19.859  INFO 18368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-24 16:39:19.874  INFO 18368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-24 16:39:21.209  WARN 18368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-24 16:39:21.548  INFO 18368 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-24 16:39:21.962  INFO 18368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-24 16:39:21.971  INFO 18368 --- [main] com.itauge.blog.BlogApplication          : Started BlogApplication in 7.778 seconds (JVM running for 10.211)
+2021-08-24 16:41:34.284  INFO 18368 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 16:41:34.285  INFO 18368 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-24 16:41:34.287  INFO 18368 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-08-24 16:41:34.359  WARN 18368 --- [http-nio-8081-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /admin
+2021-08-24 16:41:38.540  WARN 18368 --- [http-nio-8081-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /admin/
+2021-08-24 16:41:39.332  WARN 18368 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2021-08-24 16:41:41.306  INFO 18368 --- [http-nio-8081-exec-7] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.LoginController.loginPage, args=[])
+2021-08-24 16:41:41.373  INFO 18368 --- [http-nio-8081-exec-7] com.itauge.blog.aspect.LogAspect         : Result:{}login
+2021-08-24 16:42:00.738  WARN 18368 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /login
+2021-08-24 16:42:06.297  WARN 18368 --- [http-nio-8081-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /login.html
+2021-08-24 16:42:12.182  WARN 18368 --- [http-nio-8081-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /images/b1.png
+2021-08-24 16:42:23.927  INFO 18368 --- [http-nio-8081-exec-2] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.LoginController.login, args=[admin, admin, org.apache.catalina.session.StandardSessionFacade@a1b7e3c, {}])
+2021-08-24 16:42:24.224  INFO 18368 --- [http-nio-8081-exec-2] com.itauge.blog.aspect.LogAspect         : Result:{}redirect:/admin/blogs
+2021-08-24 16:42:24.304  INFO 18368 --- [http-nio-8081-exec-6] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.BlogController.toBlogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-08-24 16:42:24.377  INFO 18368 --- [http-nio-8081-exec-6] com.itauge.blog.aspect.LogAspect         : Result:{}admin/blogs
+2021-08-24 16:42:24.608  WARN 18368 --- [http-nio-8081-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /images/b1.png
+2021-08-24 16:42:26.437  WARN 18368 --- [http-nio-8081-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /admin
+2021-08-24 16:42:29.900  INFO 18368 --- [http-nio-8081-exec-3] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/tags, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.TagController.tags, args=[Page request [number: 0, size 10, sort: id: DESC], {}])
+2021-08-24 16:42:29.914  INFO 18368 --- [http-nio-8081-exec-3] com.itauge.blog.aspect.LogAspect         : Result:{}admin/tags
+2021-08-24 16:42:30.050  WARN 18368 --- [http-nio-8081-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /images/b1.png
+2021-08-24 16:42:32.479  INFO 18368 --- [http-nio-8081-exec-2] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.BlogController.toBlogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-08-24 16:42:32.493  INFO 18368 --- [http-nio-8081-exec-2] com.itauge.blog.aspect.LogAspect         : Result:{}admin/blogs
+2021-08-24 16:42:33.305  INFO 18368 --- [http-nio-8081-exec-6] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/comment, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.CommentController.comment, args=[Page request [number: 0, size 10, sort: createTime: DESC], {}])
+2021-08-24 16:42:33.327  INFO 18368 --- [http-nio-8081-exec-6] com.itauge.blog.aspect.LogAspect         : Result:{}admin/comments
+2021-08-24 16:42:35.475  INFO 18368 --- [http-nio-8081-exec-4] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/types, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.TypeController.types, args=[Page request [number: 0, size 10, sort: id: DESC], {}])
+2021-08-24 16:42:35.486  INFO 18368 --- [http-nio-8081-exec-4] com.itauge.blog.aspect.LogAspect         : Result:{}admin/types
+2021-08-24 16:42:37.022  INFO 18368 --- [http-nio-8081-exec-5] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/tags, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.TagController.tags, args=[Page request [number: 0, size 10, sort: id: DESC], {}])
+2021-08-24 16:42:37.029  INFO 18368 --- [http-nio-8081-exec-5] com.itauge.blog.aspect.LogAspect         : Result:{}admin/tags
+2021-08-24 16:42:37.761  INFO 18368 --- [http-nio-8081-exec-7] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.BlogController.toBlogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-08-24 16:42:37.771  INFO 18368 --- [http-nio-8081-exec-7] com.itauge.blog.aspect.LogAspect         : Result:{}admin/blogs
+2021-08-24 16:42:38.312  INFO 18368 --- [http-nio-8081-exec-8] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/types, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.TypeController.types, args=[Page request [number: 0, size 10, sort: id: DESC], {}])
+2021-08-24 16:42:38.318  INFO 18368 --- [http-nio-8081-exec-8] com.itauge.blog.aspect.LogAspect         : Result:{}admin/types
+2021-08-24 16:42:40.164  INFO 18368 --- [http-nio-8081-exec-3] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/index, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-08-24 16:42:40.191  WARN 18368 --- [http-nio-8081-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-08-24 16:42:40.210  WARN 18368 --- [http-nio-8081-exec-3] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-08-24 16:42:40.218  INFO 18368 --- [http-nio-8081-exec-3] com.itauge.blog.aspect.LogAspect         : Result:{}index
+2021-08-24 16:42:40.348  WARN 18368 --- [http-nio-8081-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /js/L2Dwidget.min.js/
+2021-08-24 16:42:40.370  WARN 18368 --- [http-nio-8081-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /js/APlayer.min.js
+2021-08-24 16:42:40.370  WARN 18368 --- [http-nio-8081-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /js/L2Dwidget0.min.js/
+2021-08-24 16:42:40.499  WARN 18368 --- [http-nio-8081-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /js/L2Dwidget.min.js/
+2021-08-24 16:42:40.514  WARN 18368 --- [http-nio-8081-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /js/L2Dwidget0.min.js/
+2021-08-24 16:42:40.528  WARN 18368 --- [http-nio-8081-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /js/APlayer.min.js
+2021-08-24 16:42:43.262  INFO 18368 --- [http-nio-8081-exec-5] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/blog/34, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.IndexController.blog, args=[34, {}])
+2021-08-24 16:42:43.721  INFO 18368 --- [http-nio-8081-exec-5] com.itauge.blog.aspect.LogAspect         : Result:{}blog
+2021-08-24 16:42:51.709  INFO 18368 --- [http-nio-8081-exec-9] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/archives/, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.web.ArchiveShowController.archives, args=[{}])
+2021-08-24 16:42:51.737  INFO 18368 --- [http-nio-8081-exec-9] com.itauge.blog.aspect.LogAspect         : Result:{}archives
+2021-08-24 16:42:51.941  WARN 18368 --- [http-nio-8081-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /images/b1.png
+2021-08-24 16:42:52.201  WARN 18368 --- [http-nio-8081-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /images/side.jpg
+2021-08-24 16:42:52.247  WARN 18368 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /lrc/side.lrc
+2021-08-24 16:42:54.811  WARN 18368 --- [http-nio-8081-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /images/mian.jpg
+2021-08-24 16:42:54.823  WARN 18368 --- [http-nio-8081-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /lrc/mian.lrc
+2021-08-24 16:42:55.751  INFO 18368 --- [http-nio-8081-exec-2] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/about/, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.web.AboutShowController.show, args=[])
+2021-08-24 16:42:55.755  INFO 18368 --- [http-nio-8081-exec-2] com.itauge.blog.aspect.LogAspect         : Result:{}about
+2021-08-24 16:42:55.868  WARN 18368 --- [http-nio-8081-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /staticimages/wechat.jpg
+2021-08-24 16:42:56.054  WARN 18368 --- [http-nio-8081-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /images/side.jpg
+2021-08-24 16:42:56.061  WARN 18368 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /lrc/side.lrc
+2021-08-24 16:42:57.525  INFO 18368 --- [http-nio-8081-exec-7] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.BlogController.toBlogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-08-24 16:42:57.543  INFO 18368 --- [http-nio-8081-exec-7] com.itauge.blog.aspect.LogAspect         : Result:{}admin/blogs
+2021-08-24 16:44:07.467  WARN 18368 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46s993ms560µs500ns).
+2021-08-24 16:44:10.568  WARN 18368 --- [http-nio-8081-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /admin
+2021-08-24 16:44:10.994  WARN 18368 --- [http-nio-8081-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2021-08-24 16:44:21.125  WARN 18368 --- [http-nio-8081-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin
+2021-08-24 16:44:32.603  WARN 18368 --- [http-nio-8081-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /admin
+2021-08-24 16:45:08.261  INFO 18368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-24 16:45:08.275  INFO 18368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-24 16:45:08.344  INFO 18368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-24 16:45:18.916  INFO 1432 --- [main] com.itauge.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_241 on DESKTOP-UA32AG2 with PID 1432 (C:\Users\itaug\IdeaProjects\blog\target\classes started by itaug in C:\Users\itaug\IdeaProjects\blog)
+2021-08-24 16:45:18.919 DEBUG 1432 --- [main] com.itauge.blog.BlogApplication          : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-24 16:45:18.920  INFO 1432 --- [main] com.itauge.blog.BlogApplication          : No active profile set, falling back to default profiles: default
+2021-08-24 16:45:19.834  INFO 1432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-24 16:45:19.963  INFO 1432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 5 JPA repository interfaces.
+2021-08-24 16:45:20.990  INFO 1432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-08-24 16:45:21.007  INFO 1432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-24 16:45:21.008  INFO 1432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-24 16:45:21.380  INFO 1432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-24 16:45:21.380  INFO 1432 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2403 ms
+2021-08-24 16:45:21.578  INFO 1432 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-24 16:45:21.654  INFO 1432 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-24 16:45:21.846  INFO 1432 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-24 16:45:21.972  INFO 1432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-24 16:45:22.599  INFO 1432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-24 16:45:22.633  INFO 1432 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-24 16:45:23.666  INFO 1432 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-24 16:45:23.677  INFO 1432 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-24 16:45:24.847  WARN 1432 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-24 16:45:25.200  INFO 1432 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-24 16:45:25.561  INFO 1432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-24 16:45:25.573  INFO 1432 --- [main] com.itauge.blog.BlogApplication          : Started BlogApplication in 7.429 seconds (JVM running for 9.516)
+2021-08-24 16:45:33.873  INFO 1432 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 16:45:33.873  INFO 1432 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-24 16:45:33.875  INFO 1432 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-08-24 16:45:33.921  WARN 1432 --- [http-nio-8081-exec-1] o.s.web.servlet.PageNotFound             : No mapping for GET /admin
+2021-08-24 16:45:45.381  WARN 1432 --- [http-nio-8081-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /admin
+2021-08-24 16:46:12.165  INFO 1432 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-08-24 16:46:12.170  INFO 1432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-08-24 16:46:12.181  INFO 1432 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-08-24 16:46:19.023  INFO 17828 --- [main] com.itauge.blog.BlogApplication          : Starting BlogApplication using Java 1.8.0_241 on DESKTOP-UA32AG2 with PID 17828 (C:\Users\itaug\IdeaProjects\blog\target\classes started by itaug in C:\Users\itaug\IdeaProjects\blog)
+2021-08-24 16:46:19.027 DEBUG 17828 --- [main] com.itauge.blog.BlogApplication          : Running with Spring Boot v2.5.3, Spring v5.3.9
+2021-08-24 16:46:19.027  INFO 17828 --- [main] com.itauge.blog.BlogApplication          : No active profile set, falling back to default profiles: default
+2021-08-24 16:46:19.837  INFO 17828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-08-24 16:46:19.956  INFO 17828 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 5 JPA repository interfaces.
+2021-08-24 16:46:20.682  INFO 17828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-08-24 16:46:20.692  INFO 17828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-08-24 16:46:20.693  INFO 17828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-24 16:46:20.831  INFO 17828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-08-24 16:46:20.831  INFO 17828 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1751 ms
+2021-08-24 16:46:21.004  INFO 17828 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-08-24 16:46:21.052  INFO 17828 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-08-24 16:46:21.174  INFO 17828 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-08-24 16:46:21.279  INFO 17828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-08-24 16:46:21.843  INFO 17828 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-08-24 16:46:21.864  INFO 17828 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-08-24 16:46:22.833  INFO 17828 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-08-24 16:46:22.845  INFO 17828 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-08-24 16:46:23.889  WARN 17828 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-08-24 16:46:24.227  INFO 17828 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-08-24 16:46:25.018  INFO 17828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-24 16:46:25.039  INFO 17828 --- [main] com.itauge.blog.BlogApplication          : Started BlogApplication in 6.835 seconds (JVM running for 8.388)
+2021-08-24 16:46:26.378  INFO 17828 --- [http-nio-8081-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 16:46:26.380  INFO 17828 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-08-24 16:46:26.383  INFO 17828 --- [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-08-24 16:46:26.444  WARN 17828 --- [http-nio-8081-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /admin
+2021-08-24 16:46:33.702  INFO 17828 --- [http-nio-8081-exec-3] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.LoginController.loginPage, args=[])
+2021-08-24 16:46:33.730  INFO 17828 --- [http-nio-8081-exec-3] com.itauge.blog.aspect.LogAspect         : Result:{}login
+2021-08-24 16:46:34.240  WARN 17828 --- [http-nio-8081-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /images/b1.png
+2021-08-24 16:47:06.437  INFO 17828 --- [http-nio-8081-exec-8] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.LoginController.loginPage, args=[])
+2021-08-24 16:47:06.438  INFO 17828 --- [http-nio-8081-exec-8] com.itauge.blog.aspect.LogAspect         : Result:{}login
+2021-08-24 16:47:06.666  WARN 17828 --- [http-nio-8081-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /images/b1.png
+2021-08-24 16:47:09.527  INFO 17828 --- [http-nio-8081-exec-10] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.LoginController.login, args=[admin, admin, org.apache.catalina.session.StandardSessionFacade@1b912988, {}])
+2021-08-24 16:47:09.587  INFO 17828 --- [http-nio-8081-exec-10] com.itauge.blog.aspect.LogAspect         : Result:{}redirect:/admin/blogs
+2021-08-24 16:47:09.614  INFO 17828 --- [http-nio-8081-exec-4] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.BlogController.toBlogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-08-24 16:47:09.666  INFO 17828 --- [http-nio-8081-exec-4] com.itauge.blog.aspect.LogAspect         : Result:{}admin/blogs
+2021-08-24 16:47:09.886  WARN 17828 --- [http-nio-8081-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /images/b1.png
+2021-08-24 16:47:11.738  INFO 17828 --- [http-nio-8081-exec-3] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/types, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.TypeController.types, args=[Page request [number: 0, size 10, sort: id: DESC], {}])
+2021-08-24 16:47:11.752  INFO 17828 --- [http-nio-8081-exec-3] com.itauge.blog.aspect.LogAspect         : Result:{}admin/types
+2021-08-24 16:47:13.749  INFO 17828 --- [http-nio-8081-exec-5] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/types/11/delete, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.TypeController.deleteType, args=[11, {}])
+2021-08-24 16:47:13.841  INFO 17828 --- [http-nio-8081-exec-5] com.itauge.blog.aspect.LogAspect         : Result:{}redirect:/admin/types
+2021-08-24 16:47:13.867  INFO 17828 --- [http-nio-8081-exec-1] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/types, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.TypeController.types, args=[Page request [number: 0, size 10, sort: id: DESC], {msg=刪除成功}])
+2021-08-24 16:47:13.875  INFO 17828 --- [http-nio-8081-exec-1] com.itauge.blog.aspect.LogAspect         : Result:{}admin/types
+2021-08-24 16:47:15.263  INFO 17828 --- [http-nio-8081-exec-6] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/comment, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.CommentController.comment, args=[Page request [number: 0, size 10, sort: createTime: DESC], {}])
+2021-08-24 16:47:15.280  INFO 17828 --- [http-nio-8081-exec-6] com.itauge.blog.aspect.LogAspect         : Result:{}admin/comments
+2021-08-24 16:47:18.101  INFO 17828 --- [http-nio-8081-exec-7] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/index, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-08-24 16:47:18.119  WARN 17828 --- [http-nio-8081-exec-7] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-08-24 16:47:18.130  WARN 17828 --- [http-nio-8081-exec-7] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-08-24 16:47:18.137  INFO 17828 --- [http-nio-8081-exec-7] com.itauge.blog.aspect.LogAspect         : Result:{}index
+2021-08-24 16:47:18.259  WARN 17828 --- [http-nio-8081-exec-9] o.s.web.servlet.PageNotFound             : No mapping for GET /js/L2Dwidget0.min.js/
+2021-08-24 16:47:18.259  WARN 17828 --- [http-nio-8081-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /js/L2Dwidget.min.js/
+2021-08-24 16:47:18.280  WARN 17828 --- [http-nio-8081-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /js/APlayer.min.js
+2021-08-24 16:47:18.358  WARN 17828 --- [http-nio-8081-exec-4] o.s.web.servlet.PageNotFound             : No mapping for GET /js/L2Dwidget.min.js/
+2021-08-24 16:47:18.371  WARN 17828 --- [http-nio-8081-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /js/L2Dwidget0.min.js/
+2021-08-24 16:47:18.387  WARN 17828 --- [http-nio-8081-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /js/APlayer.min.js
+2021-08-24 16:47:22.669  INFO 17828 --- [http-nio-8081-exec-5] com.itauge.blog.aspect.LogAspect         : Request :LogAspect.RequestLog(url=http://localhost:8081/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.itauge.blog.controller.admin.BlogController.toBlogs, args=[Page request [number: 0, size 10, sort: updateTime: DESC], BlogQuery(title=null, typeId=null, recommend=false), {blogQuery=BlogQuery(title=null, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}])
+2021-08-24 16:47:22.684  INFO 17828 --- [http-nio-8081-exec-5] com.itauge.blog.aspect.LogAspect         : Result:{}admin/blogs

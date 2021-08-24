@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>归档</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" th:href="@{/static/css/me.css}">
+  <link rel="stylesheet" th:href="@{/static/css/APlayer.min.css}">
+</head>
+<body>
+
+  <!--导航-->
+  <div th:replace="~{fragements::top(n=4)}"></div>
+  <!--中间内容-->
+  <div style="opacity: 0.8;" class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+      <!--header-->
+      <div class="ui top attached padded segment">
+        <div class="ui middle aligned two column grid">
+          <div class="column">
+            <h3 class="ui blue header">归档</h3>
+          </div>
+          <div class="right aligned column">
+            共 <h2 th:text="${blogCount}" class="ui orange header m-inline-block m-text-thin"> </h2> 篇博客
+          </div>
+        </div>
+      </div>
+
+      <th:block th:each="item : ${archMap}">
+        <h3 class="ui purple center aligned header" th:text="${item.key}"></h3>
+        <div class="ui fluid vertical menu">
+          <a th:href="@{/blog/}+${blog.getId()}" target="_blank" class="item" th:each="blog : ${item.value}">
+          <span>
+            <i class="mini purple circle icon"></i><span th:text="${blog.getTitle()}"></span>
+            <div class="ui purple basic left pointing label m-padded-mini " th:text="${#dates.format(blog.getUpdateTime(),'MMMdd')}"></div>
+          </span>
+            <div class="ui orange basic left pointing label m-padded-mini " th:text="${blog.getFlag()}"></div>
+          </a>
+
+        </div>
+        <br>
+        <br>
+
+      </th:block>
+
+    </div>
+    <div id="player"></div>
+  </div>
+
+  <br>
+  <br>
+  <!--底部footer-->
+
+  <div th:replace="~{fragements::foot}"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script th:src="@{/static/js/APlayer.min.js}"></script>
+  <script type="text/javascript" charset="utf-8"  th:src="@{/static/js/L2Dwidget.min.js/}"></script>
+  <script type="text/javascript" charset="utf-8"  th:src="@{/static/js/L2Dwidget0.min.js/}"></script>
+  <script>
+    $('.menu.toggle').click(function () {
+      $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+  </script>
+
+  <script th:inline="javascript">
+    const ap = new APlayer({
+      container: document.getElementById('player'),
+      autoplay: true,
+      theme: '#FADFA3',
+      loop: 'all',
+      order: 'random',
+      preload: 'auto',
+      volume: 0.3,
+      mutex: true,
+      listFolded: true,
+      listMaxHeight: 90,
+      lrcType: 3,
+      audio: [
+        {
+          name: '眠りの森 ',
+          artist: 'Aimer / Yuuki Ozaki',
+          url: 'http://music.163.com/song/media/outer/url?id=29095828.mp3',
+          cover: '/images/mian.jpg',
+          lrc: '/lrc/mian.lrc',
+          theme: '#ebd0c2'
+        },
+        {
+          /*
+          * http://music.163.com/song/media/outer/url?id={}.mp3 方式获取外链
+          * */
+          name: 'Other Side',
+          artist: '雅-MIYAVI-',
+          url: 'http://music.163.com/song/media/outer/url?id=1378406180.mp3',
+          cover: '/images/side.jpg',
+          lrc: '/lrc/side.lrc',
+          theme: '#46718b'
+        }
+      ]
+    });
+  </script>
+  <script type="text/javascript">
+    L2Dwidget.init({
+      "model": {
+        jsonPath: "https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json",
+        "scale": 1
+      },
+      "display": {
+        "superSample": 5,
+        "width": 200,
+        "height": 400,
+        "position": "right",
+        "hOffset": 10,
+        "vOffset": -28
+      }
+    });
+  </script>
+</body>
+</html>
