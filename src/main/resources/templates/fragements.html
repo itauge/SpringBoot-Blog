@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<html lang="en" xmlns:th="http://www.thymeleaf.org/" xmlns:shiro="http://www.thymeleaf.org/thymeleaf-extras-shiro">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -26,7 +26,7 @@
             <a th:href="@{/tags/}+${-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active blue'"><i class="tags icon"></i>标签</a>
             <a th:href="@{/archives/}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active blue'"><i class="clone icon"></i>归档</a>
             <a th:href="@{/about/}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active blue'"><i class="info icon"></i>关于我</a>
-            <a th:href="@{/admin/login}" th:if="${session.user==null}" class="m-item item m-mobile-hide"><i class=" at icon"></i>登录</a>
+            <a shiro:user="admin" th:href="@{/admin/login}" th:if="${session.user==null}" class="m-item item m-mobile-hide"><i class=" at icon"></i>登录</a>
             <a th:href="@{/admin/blogs}" th:if="${session.user!=null}" class="m-item item m-mobile-hide"><i class="at icon"></i>管理</a>
             <div class="right m-item item m-mobile-hide">
                 <form  name="search"  class="right m-item item m-mobile-hide" method="post" th:action="@{/search}" target="_blank">

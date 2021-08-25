@@ -18,4 +18,10 @@ public class UserServiceImpl implements UserService {
         User user = userRepository.findByUsernameAndPassword(username, MD5Util.getMd5(password));
         return user;
     }
+
+    @Override
+    public User checkByName(String username) {
+        User user = userRepository.findByUsername(username);
+        return user;
+    }
 }
